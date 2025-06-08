@@ -13,7 +13,10 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/ui": "*",
+    "@clerk/backend": "^2.0.0",
+    "@clerk/nextjs": "^6.21.0",
+    "@novu/nextjs": "^3.5.0",
+    "@repo/design-system": "*",
     "next": "^15.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"

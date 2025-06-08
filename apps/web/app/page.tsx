@@ -1,4 +1,4 @@
-import { Button } from "@repo/ui/button";
+import { Button } from "@repo/design-system/components/button";
 import Image, { type ImageProps } from "next/image";
 import styles from "./page.module.css";
 
@@ -63,7 +63,7 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button appName="web" className={styles.secondary}>
+        <Button className={styles.secondary}>
           Open alert
         </Button>
       </main>

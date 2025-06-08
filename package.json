@@ -18,5 +18,8 @@
     "node": ">=18"
   },
   "packageManager": "bun@1.2.15",
-  "workspaces": ["apps/*", "packages/*"]
+  "workspaces": ["apps/*", "packages/*"],
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3"
+  }
 }

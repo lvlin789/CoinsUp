@@ -1,0 +1,30 @@
+{
+  "name": "@repo/database",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "build": "bunx prisma generate --no-hints --schema=./prisma/schema.prisma",
+    "lint": "biome lint --write .",
+    "format": "biome format --write .",
+    "check": "biome check --write .",
+    "check-types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "@types/bun": "latest",
+    "@types/ws": "^8.18.1",
+    "bufferutil": "^4.0.9",
+    "prisma": "^6.9.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "@prisma/adapter-neon": "^6.9.0",
+    "@prisma/client": "6.9.0",
+    "@t3-oss/env-nextjs": "^0.13.6",
+    "ws": "^8.18.2",
+    "zod": "^3.25.56"
+  }
+}

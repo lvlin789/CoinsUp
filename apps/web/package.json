@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@repo/design-system": "*",
-    "@repo/hooks": "*",
     "next": "^15.3.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "@clerk/nextjs": "^6.21.0"
   },
   "devDependencies": {
     "@repo/typescript-config": "*",

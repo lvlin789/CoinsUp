@@ -5,5 +5,9 @@
     "js/ts.implicitProjectConfig.strictFunctionTypes": true,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "files.exclude": {
+        "**/.next": true,
+        "**/.turbo": true
+    }
 }

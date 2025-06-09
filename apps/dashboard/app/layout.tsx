@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import "./styles.css";
-import { fonts } from '@repo/design-system/lib/fonts';
-import { DesignSystemProvider } from '@repo/design-system';
-
+import { fonts } from "@repo/design-system/lib/fonts";
+import { DesignSystemProvider } from "@repo/design-system";
 
 import {
   ClerkProvider,
@@ -11,7 +10,7 @@ import {
   SignedIn,
   SignedOut,
   UserButton,
-} from '@clerk/nextjs'
+} from "@clerk/nextjs";
 
 export default function RootLayout({
   children,
@@ -21,10 +20,8 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className={fonts} suppressHydrationWarning>
-        <body >
-          <DesignSystemProvider>
-            {children}
-          </DesignSystemProvider>
+        <body>
+          <DesignSystemProvider>{children}</DesignSystemProvider>
         </body>
       </html>
     </ClerkProvider>
